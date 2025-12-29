@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, MapPin, Phone, MessageCircle } from "lucide-react"
+import { createBrowserClient } from "@supabase/ssr"
 
 const initialFormData = {
   name: "",
@@ -31,25 +32,25 @@ export default function ContactPage() {
     setSuccess(false)
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
+      const supabase = createBrowserClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+      )
+
+      const { error: submitError } = await supabase.from("contact_messages").insert([
+        {
           name: formData.name.trim(),
           email: formData.email.trim(),
           phone: formData.phone.trim() || null,
           subject: formData.subject.trim() || null,
           message: formData.message.trim(),
-        }),
-      })
+          status: "new",
+        },
+      ])
 
-      const result = await response.json()
-
-      if (!response.ok) {
-        console.error("[contact] Error submitting contact form:", result)
-        setError(result.error || "Une erreur est survenue. Veuillez réessayer.")
+      if (submitError) {
+        console.error("[contact] Error submitting contact form:", submitError)
+        setError("Une erreur est survenue. Veuillez réessayer.")
         return
       }
 
