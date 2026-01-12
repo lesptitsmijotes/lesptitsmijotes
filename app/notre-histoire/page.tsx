@@ -25,13 +25,11 @@ export default function NotreHistoirePage() {
               <h2 className="font-charmonman text-4xl text-[#ff3131] mb-6">La Fondatrice</h2>
               <div className="space-y-4 font-simonetta text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Les P&apos;tits Mijotés est né de la passion d&apos;une femme pour la cuisine africaine authentique et
-                  le désir de partager les saveurs traditionnelles avec le plus grand nombre.
+                  Derrière les P&apos;tits Mijotés il y a une femme attachée à la cuisine et à ses racines africaines, 
+                  avec l&apos;envie de révéler une gastronomie africaine authentique, généreuse et assumée.
                 </p>
                 <p>
-                  Forte d&apos;une expérience familiale transmise de génération en génération, notre fondatrice a su
-                  allier tradition et modernité pour créer des plats qui célèbrent la richesse culinaire du continent
-                  africain.
+                  La cuisine africaine, je l&apos;ai apprise dans la transmission : les gestes précis, les épices justes, des temps de cuisson maîtrisés et des accords de saveurs construits patiemment.
                 </p>
                 <p>
                   Chaque recette est préparée avec des ingrédients soigneusement sélectionnés, dans le respect des
@@ -52,16 +50,15 @@ export default function NotreHistoirePage() {
               <h2 className="font-charmonman text-4xl text-[#ff3131] mb-6">Notre Vision Culinaire</h2>
               <div className="space-y-4 font-simonetta text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Notre mission est de faire découvrir la diversité et la richesse de la cuisine africaine à travers des
-                  plats authentiques et raffinés.
-                </p>
+                  Avec Les P'tits Mijotés, notre ambition est double :                     
+                  <ul>
+                    <li>Faire découvrir (ou redécouvrir) la richesse de la cuisine africaine traditionnelle</li>
+                    <li>Proposer des créations d’inspiration africaine revisitées, élégantes et raffinées, adaptées aux événements les plus exigeants.</li>
+                  </ul>
+                </p
                 <p>
-                  Nous croyons que la cuisine est un vecteur de partage, de découverte et de convivialité. Chaque plat
-                  raconte une histoire, évoque un souvenir, crée un lien.
-                </p>
-                <p>
-                  Que ce soit pour un repas du quotidien ou un événement spécial, nous mettons tout notre savoir-faire
-                  au service de votre satisfaction.
+                 Chaque plat est pensé pour être à la fois savoureux, généreux et soigné visuellement. Que ce soit pour un repas du quotidien ou un événement spécial, 
+                  nous mettons tout notre savoir-faire au service de votre satisfaction.
                 </p>
               </div>
             </div>
