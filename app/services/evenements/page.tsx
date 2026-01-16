@@ -79,18 +79,11 @@ export default function EvenementsPage() {
         {events.length === 0 ? (
           <div className="text-center py-16">
             <p className="font-simonetta text-xl text-gray-500">
-              Aucun événement prévu pour le moment.
+              Aucun événement en cours pour le moment.
             </p>
             <p className="font-simonetta text-gray-400 mt-2">
               Revenez bientôt pour découvrir nos prochains événements !
             </p>
-            <Button
-              asChild
-              size="lg"
-              className="mt-8 bg-[#ff3131] hover:bg-[#ff3131]/90 text-white font-simonetta text-lg"
-            >
-              <Link href="/quote">Organiser un événement</Link>
-            </Button>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
