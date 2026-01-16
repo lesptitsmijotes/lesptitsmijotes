@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   description:
     "Traiteur et livraison de repas africains traditionnels. Buffets élégants pour particuliers, professionnels et événements.",
   icons: {
-    icon: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/images/logo-web.svg",
+    apple: "/images/logo-web.svg",
   },
 }
 

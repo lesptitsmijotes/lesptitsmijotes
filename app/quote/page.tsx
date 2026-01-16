@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -26,6 +26,7 @@ export default function QuotePage() {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState("")
   const [lastQuote, setLastQuote] = useState<typeof formData | null>(null)
+  const successRef = useRef<HTMLElement>(null)
 
   const serviceTypes = [
     { value: "Événement Privé (Anniversaire, Mariage, etc.)", label: "Événement Privé (Anniversaire, Mariage, etc.)" },
@@ -92,6 +93,13 @@ export default function QuotePage() {
     }))
   }
 
+  // Scroll vers le message de succès quand la demande est validée
+  useEffect(() => {
+    if (success && successRef.current) {
+      successRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }, [success])
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -108,7 +116,7 @@ export default function QuotePage() {
 
       {/* Success Message */}
       {success && lastQuote && (
-        <section className="py-8 px-4 bg-gradient-to-b from-green-50 to-white">
+        <section ref={successRef} className="py-8 px-4 bg-gradient-to-b from-green-50 to-white">
           <div className="max-w-4xl mx-auto">
             <Card className="border-2 border-green-500 bg-gradient-to-br from-green-50 to-white shadow-xl">
               <CardContent className="pt-8 pb-8">

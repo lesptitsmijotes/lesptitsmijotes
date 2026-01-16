@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { toast } from "sonner"
-import Image from "next/image"
 
 export default function AdminLoginPage() {
   const [username, setUsername] = useState("")
@@ -60,12 +59,10 @@ export default function AdminLoginPage() {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">
-            <Image
-              src="/images/logo.png"
+            <img
+              src="/images/logo-web.svg"
               alt="Les P'tits Mijotés - Cuisine et Traiteur Africain"
-              width={200}
-              height={90}
-              className="h-16 w-auto"
+              style={{ height: "80px", width: "auto" }}
             />
           </div>
           <CardTitle className="text-2xl font-charmonman">Administration</CardTitle>

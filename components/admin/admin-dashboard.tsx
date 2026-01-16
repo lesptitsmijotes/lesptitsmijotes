@@ -11,9 +11,9 @@ import { GalleryManagement } from "@/components/admin/gallery-management"
 import { OrdersManagement } from "@/components/admin/orders-management"
 import { HeroImagesManagement } from "@/components/admin/hero-images-management"
 import { UsersManagement } from "@/components/admin/users-management"
+import { NotificationBell } from "@/components/admin/notification-bell"
 import { useRouter } from "next/navigation"
 import { LogOut, Menu, Calendar, Star, ImageIcon, ShoppingCart, Home, Users } from "lucide-react"
-import Image from "next/image"
 
 interface AdminDashboardProps {
   user: {
@@ -37,22 +37,23 @@ export function AdminDashboard({ user }: AdminDashboardProps) {
       <header className="sticky top-0 z-50 border-b bg-white shadow-sm">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <div className="flex items-center gap-4">
-            <Image
-              src="/images/logo.png"
+            <img
+              src="/images/logo-web.svg"
               alt="Les P'tits Mijotés - Cuisine et Traiteur Africain"
-              width={140}
-              height={60}
-              className="h-11 w-auto"
+              style={{ height: "48px", width: "auto" }}
             />
             <div className="hidden md:block">
               <h1 className="text-xl font-bold">Administration</h1>
               <p className="text-sm text-gray-500">{user.email}</p>
             </div>
           </div>
-          <Button onClick={handleLogout} variant="outline" className="gap-2 bg-transparent">
-            <LogOut className="h-4 w-4" />
-            Déconnexion
-          </Button>
+          <div className="flex items-center gap-3">
+            <NotificationBell onNavigateToOrders={() => setActiveTab("orders")} />
+            <Button onClick={handleLogout} variant="outline" className="gap-2 bg-transparent">
+              <LogOut className="h-4 w-4" />
+              Déconnexion
+            </Button>
+          </div>
         </div>
       </header>
 

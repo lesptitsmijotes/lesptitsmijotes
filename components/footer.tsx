@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Instagram, Mail, Phone, MapPin, Facebook } from "lucide-react"
 
 const TikTokIcon = ({ className }: { className?: string }) => (
@@ -15,22 +14,21 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-[#f5efe8] text-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo et Description */}
           <div>
-            <Image
-              src="/images/logo.png"
+            <img
+              src="/images/logo-web.svg"
               alt="Les P'tits Mijotés - Cuisine et Traiteur Africain"
-              width={160}
-              height={70}
-              className="mb-3 brightness-0 invert h-12 w-auto"
+              className="mb-4"
+              style={{ height: "64px", width: "auto" }}
             />
-            <p className="font-simonetta text-gray-300 mb-3 text-sm">
+            <p className="font-simonetta text-gray-600 mb-3 text-sm">
               Cuisine et traiteur africain - Des plats traditionnels préparés avec passion
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 text-gray-600">
               <a
                 href="https://www.facebook.com/share/1D7q4KvaMN/?mibextid=wwXIfr"
                 target="_blank"
@@ -64,7 +62,7 @@ export function Footer() {
           {/* Navigation */}
           <div>
             <h3 className="font-charmonman text-xl text-[#ff3131] mb-3">Navigation</h3>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 font-simonetta text-sm">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 font-simonetta text-sm text-gray-600">
               <li>
                 <Link href="/" className="hover:text-[#ff3131] transition-colors">
                   Accueil
@@ -96,7 +94,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h3 className="font-charmonman text-xl text-[#ff3131] mb-3">Contact</h3>
-            <ul className="space-y-2 font-simonetta text-sm">
+            <ul className="space-y-2 font-simonetta text-sm text-gray-600">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 shrink-0" />
                 <a href="tel:+33695601821" className="hover:text-[#ff3131] transition-colors">
@@ -117,7 +115,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-6 pt-6 text-center font-simonetta text-gray-400 text-sm">
+        <div className="border-t border-gray-300 mt-6 pt-6 text-center font-simonetta text-gray-500 text-sm">
           <p>&copy; {new Date().getFullYear()} Les P&apos;tits Mijotés. Tous droits réservés.</p>
         </div>
       </div>

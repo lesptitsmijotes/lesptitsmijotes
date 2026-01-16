@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -24,6 +24,7 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState("")
+  const successRef = useRef<HTMLDivElement>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -70,6 +71,13 @@ export default function ContactPage() {
       [e.target.name]: e.target.value,
     }))
   }
+
+  // Scroll vers le message de succès quand le message est envoyé
+  useEffect(() => {
+    if (success && successRef.current) {
+      successRef.current.scrollIntoView({ behavior: "smooth", block: "center" })
+    }
+  }, [success])
 
   return (
     <div className="min-h-screen">
@@ -179,7 +187,7 @@ export default function ContactPage() {
                     {error && <p className="text-red-600 font-simonetta text-sm">{error}</p>}
 
                     {success && (
-                      <div className="bg-green-50 border-2 border-green-200 rounded-lg p-4">
+                      <div ref={successRef} className="bg-green-50 border-2 border-green-200 rounded-lg p-4">
                         <p className="text-green-800 font-simonetta">
                           Merci pour votre message ! Nous vous contacterons bientôt.
                         </p>

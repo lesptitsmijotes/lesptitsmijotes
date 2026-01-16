@@ -48,9 +48,13 @@ export default function HomePage() {
         <HeroCarousel images={heroImages} />
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h1 className="font-charmonman text-5xl md:text-7xl font-bold text-[#ff3131] mb-12 text-balance">
-            Savourez l&apos;Afrique Authentique
-          </h1>
+          <div className="mb-12 flex justify-center">
+            <img
+              src="/images/logo-web.svg"
+              alt="Les P'tits Mijotés - Cuisine et Traiteur Africain"
+              style={{ height: "280px", width: "auto" }}
+            />
+          </div>
 
           <p className="font-simonetta text-xl md:text-2xl text-gray-800 mb-16 max-w-2xl mx-auto text-pretty">
             Cuisine et traiteur africain - Des plats traditionnels préparés avec passion pour vos événements et votre

@@ -141,10 +141,10 @@ export default function ParticuliersPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#ff3131] text-white py-16 px-4">
+      <section className="bg-[#ff3131] text-white py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-charmonman text-4xl md:text-5xl mb-6">Prêt à Organiser Votre Événement ?</h2>
-          <p className="font-simonetta text-xl mb-8">Contactez-nous pour discuter de votre projet</p>
+          <h2 className="font-charmonman text-3xl md:text-4xl mb-3">Prêt à Organiser Votre Événement ?</h2>
+          <p className="font-simonetta text-base mb-5">Contactez-nous pour discuter de votre projet</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild

@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -43,6 +43,7 @@ export default function OrderPage() {
     customerInfo: typeof customerInfo
     total: number
   } | null>(null)
+  const successRef = useRef<HTMLDivElement>(null)
 
   const getTodayDate = () => {
     const today = new Date()
@@ -191,6 +192,13 @@ export default function OrderPage() {
     }))
   }
 
+  // Scroll vers le message de succès quand la commande est validée
+  useEffect(() => {
+    if (success && successRef.current) {
+      successRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }, [success])
+
   // Format menu date helper
   const formatMenuDate = (menuDate: string | null) => {
     if (!menuDate) return "Sans date"
@@ -233,7 +241,7 @@ export default function OrderPage() {
 
       {/* Success Message */}
       {success && (
-        <section className="py-8 px-4 bg-gradient-to-b from-green-50 to-white">
+        <section ref={successRef} className="py-8 px-4 bg-gradient-to-b from-green-50 to-white">
           <div className="max-w-4xl mx-auto">
             <Card className="border-2 border-green-500 bg-gradient-to-br from-green-50 to-white shadow-xl">
               <CardContent className="pt-8 pb-8">
@@ -487,16 +495,48 @@ export default function OrderPage() {
 
                           <div className="space-y-2">
                             <Label htmlFor="deliveryTime" className="font-simonetta">
-                              Heure souhaitée
+                              Heure de livraison *
                             </Label>
-                            <Input
+                            <select
                               id="deliveryTime"
                               name="deliveryTime"
-                              type="time"
                               value={customerInfo.deliveryTime}
-                              onChange={handleCustomerInfoChange}
-                              className="font-simonetta"
-                            />
+                              onChange={(e) => setCustomerInfo(prev => ({ ...prev, deliveryTime: e.target.value }))}
+                              required
+                              className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm font-simonetta"
+                            >
+                              <option value="">Choisir une heure</option>
+                              <optgroup label="Midi (12h - 14h)">
+                                <option value="12:00">12:00</option>
+                                <option value="12:15">12:15</option>
+                                <option value="12:30">12:30</option>
+                                <option value="12:45">12:45</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:15">13:15</option>
+                                <option value="13:30">13:30</option>
+                                <option value="13:45">13:45</option>
+                                <option value="14:00">14:00</option>
+                              </optgroup>
+                              <optgroup label="Soir (19h - 23h)">
+                                <option value="19:00">19:00</option>
+                                <option value="19:15">19:15</option>
+                                <option value="19:30">19:30</option>
+                                <option value="19:45">19:45</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:15">20:15</option>
+                                <option value="20:30">20:30</option>
+                                <option value="20:45">20:45</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:15">21:15</option>
+                                <option value="21:30">21:30</option>
+                                <option value="21:45">21:45</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:15">22:15</option>
+                                <option value="22:30">22:30</option>
+                                <option value="22:45">22:45</option>
+                                <option value="23:00">23:00</option>
+                              </optgroup>
+                            </select>
                           </div>
 
                           <div className="space-y-2">
