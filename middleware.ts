@@ -1,11 +1,10 @@
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
-export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl
-
-  // ✂️ — Commentez la ligne ci-dessous quand le site est prêt à être lancé
-  if (!pathname.startsWith("/bientot") && !pathname.startsWith("/api/waitlist")) return NextResponse.redirect(new URL("/bientot", request.url))
+export function middleware(_request: NextRequest) {
+  // ✂️ — Décommentez les deux lignes ci-dessous pour activer le mode "bientôt disponible"
+  // const { pathname } = request.nextUrl
+  // if (!pathname.startsWith("/bientot") && !pathname.startsWith("/api/waitlist")) return NextResponse.redirect(new URL("/bientot", request.url))
 
   return NextResponse.next()
 }
