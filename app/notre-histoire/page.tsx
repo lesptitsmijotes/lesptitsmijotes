@@ -36,8 +36,8 @@ export default function NotreHistoirePage() {
                 </p>
               </div>
             </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image src="/fondatrice-1.JPG" alt="La fondatrice des Petits Mijotés" fill className="object-cover object-top" />
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-xl">
+              <Image src="/fondatrice-1.JPG" alt="La fondatrice des Petits Mijotés" fill className="object-cover object-center" />
             </div>
           </div>
 

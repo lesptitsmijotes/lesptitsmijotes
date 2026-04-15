@@ -9,6 +9,7 @@ export default function ParticuliersPage() {
     {
       icon: PartyPopper,
       title: "Événements privés",
+      image: "/Evenement privé.JPG",
       description:
         "Anniversaires, baptêmes, mariages - nous créons des buffets mémorables pour célébrer vos moments importants avec style et authenticité.",
       features: [
@@ -21,6 +22,7 @@ export default function ParticuliersPage() {
     {
       icon: Utensils,
       title: "Buffets raffinés",
+      image: "/buffet raffinés.jpeg",
       description:
         "Des buffets élégants et généreux qui allient tradition africaine et présentation moderne pour impressionner vos invités.",
       features: ["Large choix de plats", "Décoration africaine", "Options végétariennes", "Quantités adaptables"],
@@ -28,6 +30,7 @@ export default function ParticuliersPage() {
     {
       icon: Home,
       title: "Repas familiaux",
+      image: "/Repas familiale.jpeg",
       description:
         "Des plats traditionnels pour régaler toute la famille, préparés avec soin pour vos déjeuners et dîners à la maison.",
       features: ["Portions généreuses", "Livraison à domicile", "Menus hebdomadaires", "Plats réconfortants"],
@@ -70,7 +73,7 @@ export default function ParticuliersPage() {
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative h-64 md:h-auto">
                     <Image
-                      src={`/african-.jpg?height=400&width=600&query=african ${service.title.toLowerCase()}`}
+                      src={service.image}
                       alt={service.title}
                       fill
                       className="object-cover"
