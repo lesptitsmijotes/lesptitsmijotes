@@ -63,9 +63,9 @@ export function MenuSection() {
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-white to-[#f5f5f5]">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-charmonman text-4xl md:text-5xl text-center text-[#ff3131] mb-4">Menu du Quotidien</h2>
+        <h2 className="font-charmonman text-4xl md:text-5xl text-center text-[#ff3131] mb-4">Menu du jour</h2>
         <p className="font-simonetta text-lg text-center text-gray-600 mb-12">
-          Découvrez nos plats du jour préparés avec amour
+          Découvrez notre carte du jour
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">

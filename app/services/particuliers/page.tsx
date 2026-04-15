@@ -8,26 +8,26 @@ export default function ParticuliersPage() {
   const services = [
     {
       icon: PartyPopper,
-      title: "Événements Privés",
+      title: "Événements privés",
       description:
         "Anniversaires, baptêmes, mariages - nous créons des buffets mémorables pour célébrer vos moments importants avec style et authenticité.",
       features: [
         "Buffets personnalisés",
+        "Service à table",
         "Présentation soignée",
-        "Service sur place disponible",
         "Adaptation aux régimes spécifiques",
       ],
     },
     {
       icon: Utensils,
-      title: "Buffets Raffinés",
+      title: "Buffets raffinés",
       description:
         "Des buffets élégants et généreux qui allient tradition africaine et présentation moderne pour impressionner vos invités.",
       features: ["Large choix de plats", "Décoration africaine", "Options végétariennes", "Quantités adaptables"],
     },
     {
       icon: Home,
-      title: "Repas Familiaux",
+      title: "Repas familiaux",
       description:
         "Des plats traditionnels pour régaler toute la famille, préparés avec soin pour vos déjeuners et dîners à la maison.",
       features: ["Portions généreuses", "Livraison à domicile", "Menus hebdomadaires", "Plats réconfortants"],
@@ -59,7 +59,7 @@ export default function ParticuliersPage() {
       {/* Services Details */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-charmonman text-4xl md:text-5xl text-center text-[#ff3131] mb-4">Nos Prestations</h2>
+          <h2 className="font-charmonman text-4xl md:text-5xl text-center text-[#ff3131] mb-4">Nos prestations</h2>
           <p className="font-simonetta text-lg text-center text-gray-600 mb-16 max-w-2xl mx-auto">
             Des services adaptés à tous vos besoins
           </p>
@@ -109,23 +109,22 @@ export default function ParticuliersPage() {
       {/* Why Choose Us */}
       <section className="py-20 px-4 bg-gradient-to-b from-white to-[#f5f5f5]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-charmonman text-4xl md:text-5xl text-[#ff3131] mb-8">Pourquoi Nous Choisir ?</h2>
+          <h2 className="font-charmonman text-4xl md:text-5xl text-[#ff3131] mb-8">Pourquoi nous choisir ?</h2>
           <div className="grid md:grid-cols-2 gap-8 text-left">
             <div className="bg-white p-6 rounded-lg shadow-sm border-2 border-transparent hover:border-[#ff3131] transition-colors">
-              <h3 className="font-charmonman text-2xl text-black mb-3">Cuisine Authentique</h3>
+              <h3 className="font-charmonman text-2xl text-black mb-3">Cuisine authentique</h3>
               <p className="font-simonetta text-gray-600">
-                Des recettes traditionnelles préparées avec des ingrédients de qualité pour une expérience gustative
-                authentique.
+                Des recettes préparées avec des ingrédients de qualité pour une expérience gustative authentique.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border-2 border-transparent hover:border-[#ff3131] transition-colors">
-              <h3 className="font-charmonman text-2xl text-black mb-3">Service Personnalisé</h3>
+              <h3 className="font-charmonman text-2xl text-black mb-3">Service personnalisé</h3>
               <p className="font-simonetta text-gray-600">
                 Nous adaptons nos prestations à vos besoins spécifiques et aux contraintes de votre événement.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border-2 border-transparent hover:border-[#ff3131] transition-colors">
-              <h3 className="font-charmonman text-2xl text-black mb-3">Présentation Soignée</h3>
+              <h3 className="font-charmonman text-2xl text-black mb-3">Présentation soignée</h3>
               <p className="font-simonetta text-gray-600">
                 Une mise en valeur élégante de nos plats pour sublimer votre table et impressionner vos invités.
               </p>
@@ -143,7 +142,7 @@ export default function ParticuliersPage() {
       {/* CTA */}
       <section className="bg-[#ff3131] text-white py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-charmonman text-3xl md:text-4xl mb-3">Prêt à Organiser Votre Événement ?</h2>
+          <h2 className="font-charmonman text-3xl md:text-4xl mb-3">Prêt à organiser votre événement ?</h2>
           <p className="font-simonetta text-base mb-5">Contactez-nous pour discuter de votre projet</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

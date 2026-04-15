@@ -8,24 +8,42 @@ export default function ProfessionnelsPage() {
   const services = [
     {
       icon: Coffee,
-      title: "Pauses Déjeuner",
+      title: "Déjeuners d'entreprise",
       description:
-        "Des repas équilibrés et savoureux pour dynamiser vos équipes. Livraison ponctuelle et service de qualité pour vos pauses déjeuner d'entreprise.",
-      features: ["Livraison à l'heure", "Emballages professionnels", "Formules variées", "Commandes récurrentes"],
+        "Offrez à vos équipes des pauses gourmandes, pratiques et de qualité au quotidien.",
+      features: [
+        "Plateaux repas individuels",
+        "Formules déjeuner complètes",
+        "Livraison ponctuelle",
+        "Commandes régulières possibles",
+        "Menus variés et équilibrés",
+      ],
     },
     {
       icon: Briefcase,
-      title: "Plateaux Repas",
+      title: "Reunions et seminaires",
       description:
-        "Des plateaux individuels pratiques et élégants pour vos réunions, séminaires et formations. Parfaits pour les événements professionnels.",
-      features: ["Packaging individuel", "Options multiples", "Facile à servir", "Présentation soignée"],
+        "Simplifiez l'organisation de vos journées de travail avec une offre adaptée à vos temps forts.",
+      features: [
+        "Plateaux repas pratiques et élégants",
+        "Pauses café (boissons, snacks, douceurs)",
+        "Buffets froids ou chauds",
+        "Service simple et rapide",
+        "Adapté aux groupes et formats longs",
+      ],
     },
     {
       icon: TrendingUp,
-      title: "Buffets d'Entreprise",
+      title: "Événements professionnels",
       description:
-        "Impressionnez vos partenaires et collaborateurs avec nos buffets raffinés. Idéal pour les inaugurations, cocktails et événements corporate.",
-      features: ["Buffets sur-mesure", "Service professionnel", "Décoration incluse", "Animation culinaire"],
+        "Marquez les esprits avec une prestation conviviale et raffinée.",
+      features: [
+        "Buffets sur-mesure",
+        "Cocktails apéritifs",
+        "Animation culinaire",
+        "Mise en place et décoration",
+        "Service professionnel",
+      ],
     },
   ]
 
@@ -55,7 +73,7 @@ export default function ProfessionnelsPage() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-charmonman text-4xl md:text-5xl text-center text-[#ff3131] mb-4">
-            Nos Solutions Corporate
+            Nos solutions corporate
           </h2>
           <p className="font-simonetta text-lg text-center text-gray-600 mb-16 max-w-2xl mx-auto">
             Des prestations professionnelles pour toutes vos occasions
@@ -107,17 +125,17 @@ export default function ProfessionnelsPage() {
       <section className="py-20 px-4 bg-gradient-to-b from-white to-[#f5f5f5]">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-charmonman text-4xl md:text-5xl text-center text-[#ff3131] mb-12">
-            Les Avantages Pour Votre Entreprise
+            Les avantages pour votre entreprise
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-2 text-center">
               <CardContent className="pt-8">
                 <div className="w-16 h-16 bg-[#ff3131]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">⚡</span>
+                  <span className="text-3xl">🍽️</span>
                 </div>
-                <h3 className="font-charmonman text-2xl mb-3 text-black">Gain de Temps</h3>
+                <h3 className="font-charmonman text-2xl mb-3 text-black">Expérience culinaire unique</h3>
                 <p className="font-simonetta text-gray-600">
-                  Concentrez-vous sur votre activité, nous nous occupons de la restauration.
+                  Une cuisine originale qui marquera positivement vos invités.
                 </p>
               </CardContent>
             </Card>
@@ -127,7 +145,7 @@ export default function ProfessionnelsPage() {
                 <div className="w-16 h-16 bg-[#ff3131]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">🎯</span>
                 </div>
-                <h3 className="font-charmonman text-2xl mb-3 text-black">Qualité Constante</h3>
+                <h3 className="font-charmonman text-2xl mb-3 text-black">Qualité constante</h3>
                 <p className="font-simonetta text-gray-600">
                   Des standards élevés pour chaque prestation, sans compromis.
                 </p>
@@ -137,18 +155,18 @@ export default function ProfessionnelsPage() {
             <Card className="border-2 text-center">
               <CardContent className="pt-8">
                 <div className="w-16 h-16 bg-[#ff3131]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl">💼</span>
+                  <span className="text-3xl">🔑</span>
                 </div>
-                <h3 className="font-charmonman text-2xl mb-3 text-black">Image Valorisée</h3>
+                <h3 className="font-charmonman text-2xl mb-3 text-black">Service clé en mains</h3>
                 <p className="font-simonetta text-gray-600">
-                  Une cuisine originale qui marquera positivement vos invités.
+                  Concentrez-vous sur votre activité, nous nous occupons de la restauration.
                 </p>
               </CardContent>
             </Card>
           </div>
 
           <div className="mt-16 bg-white p-8 md:p-12 rounded-lg shadow-sm border-2">
-            <h3 className="font-charmonman text-3xl text-[#ff3131] mb-6 text-center">Tarifs Entreprise</h3>
+            <h3 className="font-charmonman text-3xl text-[#ff3131] mb-6 text-center">Tarifs entreprise</h3>
             <p className="font-simonetta text-lg text-gray-700 text-center mb-8">
               Bénéficiez de tarifs préférentiels pour les commandes régulières et les volumes importants. Contactez-nous
               pour établir un partenariat sur-mesure.
@@ -169,7 +187,7 @@ export default function ProfessionnelsPage() {
       {/* CTA */}
       <section className="bg-[#ff3131] text-white py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-charmonman text-3xl md:text-4xl mb-3">Développez Votre Partenariat</h2>
+          <h2 className="font-charmonman text-3xl md:text-4xl mb-3">Développez votre partenariat</h2>
           <p className="font-simonetta text-base mb-5">
             Discutons de vos besoins et créons une solution adaptée à votre entreprise
           </p>

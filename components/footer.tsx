@@ -97,14 +97,14 @@ export function Footer() {
             <ul className="space-y-2 font-simonetta text-sm text-gray-600">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 shrink-0" />
-                <a href="tel:+33695601821" className="hover:text-[#ff3131] transition-colors">
-                  +33 6 95 60 18 21
+                <a href="tel:+33762677629" className="hover:text-[#ff3131] transition-colors">
+                  +33 7 62 67 76 29
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 shrink-0" />
-                <a href="mailto:contact@lesptitsmijotes.fr" className="hover:text-[#ff3131] transition-colors">
-                  contact@lesptitsmijotes.fr
+                <a href="mailto:lesptitmijotes@gmail.com" className="hover:text-[#ff3131] transition-colors">
+                  lesptitmijotes@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">

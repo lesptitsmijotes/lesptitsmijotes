@@ -57,7 +57,7 @@ export default function HomePage() {
           </div>
 
           <p className="font-simonetta text-xl md:text-2xl text-gray-800 mb-16 max-w-2xl mx-auto text-pretty">
-            Cuisine et traiteur africain - Des plats traditionnels préparés avec passion pour vos événements et votre
+            Une invitation au voyage entre traditions africaines et créations inspirées, pour vos événements et votre
             quotidien
           </p>
 
@@ -84,7 +84,7 @@ export default function HomePage() {
       {/* Services Preview */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-charmonman text-4xl md:text-5xl text-center text-[#ff3131] mb-4">Nos Services</h2>
+          <h2 className="font-charmonman text-4xl md:text-5xl text-center text-[#ff3131] mb-4">Nos services</h2>
           <p className="font-simonetta text-lg text-center text-gray-600 mb-12 max-w-2xl mx-auto">
             Des prestations sur-mesure pour tous vos besoins
           </p>
@@ -125,7 +125,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-[#ff3131]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Calendar className="w-8 h-8 text-[#ff3131]" />
                 </div>
-                <h3 className="font-charmonman text-2xl mb-3 text-black">Événements</h3>
+                <h3 className="font-charmonman text-2xl mb-3 text-black">Nos rendez-vous gourmands</h3>
                 <p className="font-simonetta text-gray-600 mb-4">Prestations sur-mesure et animations culinaires</p>
                 <Button asChild variant="link" className="text-[#ff3131] font-simonetta">
                   <Link href="/services/evenements">En savoir plus</Link>
@@ -143,9 +143,9 @@ export default function HomePage() {
       <section className="py-20 px-4 bg-gradient-to-b from-white to-[#f5f5f5]">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-charmonman text-4xl md:text-5xl text-center text-[#ff3131] mb-4">
-            Ils Nous Font Confiance
+            Ils nous font confiance
           </h2>
-          <p className="font-simonetta text-lg text-center text-gray-600 mb-12">Les avis de nos clients satisfaits</p>
+          <p className="font-simonetta text-lg text-center text-gray-600 mb-12">Avis Google</p>
           <TestimonialsSlider />
         </div>
       </section>
@@ -153,7 +153,7 @@ export default function HomePage() {
       {/* Final CTA */}
       <section className="py-8 px-4 bg-[#ff3131] text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-charmonman text-3xl md:text-4xl mb-3 text-balance">Prêt à Découvrir Nos Créations ?</h2>
+          <h2 className="font-charmonman text-3xl md:text-4xl mb-3 text-balance">Prêt à découvrir nos créations ?</h2>
           <p className="font-simonetta text-base mb-5 text-pretty">
             Explorez nos services et commandez dès aujourd&apos;hui
           </p>
@@ -163,7 +163,7 @@ export default function HomePage() {
               size="lg"
               className="bg-white text-[#ff3131] hover:bg-gray-100 font-simonetta text-lg h-14 px-8"
             >
-              <Link href="/contact">Nous Contacter</Link>
+              <Link href="/contact">Nous contacter</Link>
             </Button>
             <Button
               asChild
@@ -171,7 +171,7 @@ export default function HomePage() {
               size="lg"
               className="border-2 border-white text-white hover:bg-white hover:text-[#ff3131] font-simonetta text-lg h-14 px-8 bg-transparent"
             >
-              <Link href="/galerie">Voir la Galerie</Link>
+              <Link href="/galerie">Voir la galerie</Link>
             </Button>
           </div>
         </div>

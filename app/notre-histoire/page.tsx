@@ -25,22 +25,19 @@ export default function NotreHistoirePage() {
               <h2 className="font-charmonman text-4xl text-[#ff3131] mb-6">La Fondatrice</h2>
               <div className="space-y-4 font-simonetta text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Les P&apos;tits Mijotés est né de la passion d&apos;une femme pour la cuisine africaine authentique et
-                  le désir de partager les saveurs traditionnelles avec le plus grand nombre.
+                  Derrière Les Petits Mijotés, il y a une femme profondément attachée à la cuisine et à ses racines
+                  africaines. Elle a appris à cuisiner par la transmission : les gestes précis, le choix juste des
+                  épices et l&apos;art de prendre le temps pour construire patiemment des accords de saveurs.
                 </p>
                 <p>
-                  Forte d&apos;une expérience familiale transmise de génération en génération, notre fondatrice a su
-                  allier tradition et modernité pour créer des plats qui célèbrent la richesse culinaire du continent
-                  africain.
-                </p>
-                <p>
-                  Chaque recette est préparée avec des ingrédients soigneusement sélectionnés, dans le respect des
-                  méthodes traditionnelles, pour vous offrir une expérience gustative inoubliable.
+                  Formée par l&apos;héritage familial, elle défend une gastronomie africaine authentique, généreuse et
+                  assumée. Ici, la cuisine devient une invitation au voyage, au partage et à la création de souvenirs
+                  autour de recettes sincères et maîtrisées.
                 </p>
               </div>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image src="/african-woman-chef-cooking-traditional-food.jpg" alt="Notre fondatrice" fill className="object-cover" />
+              <Image src="/fondatrice-1.JPG" alt="La fondatrice des Petits Mijotés" fill className="object-cover object-top" />
             </div>
           </div>
 
@@ -49,19 +46,23 @@ export default function NotreHistoirePage() {
               <Image src="/african-spices-and-ingredients-on-wooden-table.jpg" alt="Notre vision culinaire" fill className="object-cover" />
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="font-charmonman text-4xl text-[#ff3131] mb-6">Notre Vision Culinaire</h2>
+              <h2 className="font-charmonman text-4xl text-[#ff3131] mb-6">Notre vision</h2>
               <div className="space-y-4 font-simonetta text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Notre mission est de faire découvrir la diversité et la richesse de la cuisine africaine à travers des
-                  plats authentiques et raffinés.
+                  Avec Les Petits Mijotés, l&apos;ambition est claire : apporter plus de diversité, d&apos;élégance et
+                  de caractère à vos repas et à vos événements. L&apos;idée n&apos;est pas seulement de proposer des
+                  plats africains, mais d&apos;offrir une expérience culinaire qui allie tradition et création,
+                  générosité et raffinement.
                 </p>
                 <p>
-                  Nous croyons que la cuisine est un vecteur de partage, de découverte et de convivialité. Chaque plat
-                  raconte une histoire, évoque un souvenir, crée un lien.
+                  Nous faisons découvrir — ou redécouvrir — la richesse de la cuisine africaine traditionnelle, tout en
+                  proposant des créations d&apos;inspiration africaine revisitées, pensées pour s&apos;adapter aux
+                  événements les plus exigeants.
                 </p>
                 <p>
-                  Que ce soit pour un repas du quotidien ou un événement spécial, nous mettons tout notre savoir-faire
-                  au service de votre satisfaction.
+                  Qu&apos;il s&apos;agisse d&apos;un repas du quotidien ou d&apos;un moment d&apos;exception, notre
+                  engagement est le même : mettre notre savoir-faire au service de votre expérience, et transformer
+                  chaque table en un véritable moment de découverte et de plaisir.
                 </p>
               </div>
             </div>
@@ -76,17 +77,19 @@ export default function NotreHistoirePage() {
                 </div>
                 <h3 className="font-charmonman text-2xl text-black mb-3">Authenticité</h3>
                 <p className="font-simonetta text-gray-600">
-                  Nous restons fidèles aux recettes traditionnelles et aux saveurs authentiques de la cuisine africaine.
+                  Nous valorisons une cuisine africaine sincère, inspirée de traditions riches, avec des saveurs vraies
+                  et généreuses.
                 </p>
               </div>
 
               <div className="text-center">
                 <div className="w-20 h-20 bg-[#ff3131] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-4xl text-white">❤️</span>
+                  <span className="text-4xl text-white">🤝</span>
                 </div>
-                <h3 className="font-charmonman text-2xl text-black mb-3">Passion</h3>
+                <h3 className="font-charmonman text-2xl text-black mb-3">Fiabilité</h3>
                 <p className="font-simonetta text-gray-600">
-                  Chaque plat est préparé avec amour et dévouement pour vous offrir la meilleure expérience possible.
+                  Nous nous engageons à offrir un service rigoureux, ponctuel et sans imprévu, pour répondre aux
+                  exigences du monde professionnel.
                 </p>
               </div>
 
@@ -94,9 +97,10 @@ export default function NotreHistoirePage() {
                 <div className="w-20 h-20 bg-[#ff3131] rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl text-white">✨</span>
                 </div>
-                <h3 className="font-charmonman text-2xl text-black mb-3">Excellence</h3>
+                <h3 className="font-charmonman text-2xl text-black mb-3">Respects</h3>
                 <p className="font-simonetta text-gray-600">
-                  Nous sélectionnons les meilleurs ingrédients et appliquons des standards de qualité rigoureux.
+                  Le respect guide chacune de nos actions : dans la qualité de nos produits, la tenue de nos
+                  engagements et l&apos;attention portée à chaque client.
                 </p>
               </div>
             </div>
