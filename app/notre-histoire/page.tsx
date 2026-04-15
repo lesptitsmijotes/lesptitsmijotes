@@ -25,7 +25,7 @@ export default function NotreHistoirePage() {
               <h2 className="font-charmonman text-4xl text-[#ff3131] mb-6">La Fondatrice</h2>
               <div className="space-y-4 font-simonetta text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Derrière Les Petits Mijotés, il y a une femme profondément attachée à la cuisine et à ses racines
+                  Derrière Les P&apos;tits Mijotés, il y a une femme profondément attachée à la cuisine et à ses racines
                   africaines. Elle a appris à cuisiner par la transmission : les gestes précis, le choix juste des
                   épices et l&apos;art de prendre le temps pour construire patiemment des accords de saveurs.
                 </p>
@@ -49,7 +49,7 @@ export default function NotreHistoirePage() {
               <h2 className="font-charmonman text-4xl text-[#ff3131] mb-6">Notre vision</h2>
               <div className="space-y-4 font-simonetta text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Avec Les Petits Mijotés, l&apos;ambition est claire : apporter plus de diversité, d&apos;élégance et
+                  Avec Les P&apos;tits Mijotés, l&apos;ambition est claire : apporter plus de diversité, d&apos;élégance et
                   de caractère à vos repas et à vos événements. L&apos;idée n&apos;est pas seulement de proposer des
                   plats africains, mais d&apos;offrir une expérience culinaire qui allie tradition et création,
                   générosité et raffinement.
@@ -97,7 +97,7 @@ export default function NotreHistoirePage() {
                 <div className="w-20 h-20 bg-[#ff3131] rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-4xl text-white">✨</span>
                 </div>
-                <h3 className="font-charmonman text-2xl text-black mb-3">Respects</h3>
+                <h3 className="font-charmonman text-2xl text-black mb-3">Respect</h3>
                 <p className="font-simonetta text-gray-600">
                   Le respect guide chacune de nos actions : dans la qualité de nos produits, la tenue de nos
                   engagements et l&apos;attention portée à chaque client.

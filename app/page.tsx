@@ -44,19 +44,20 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-[#a6a6a6] to-white px-4 py-20">
+      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-[#a6a6a6] to-white px-4 py-16">
         <HeroCarousel images={heroImages} />
 
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <div className="mb-12 flex justify-center">
+        <div className="relative z-10 w-full max-w-4xl mx-auto text-center">
+          <div className="mb-8 flex justify-center">
             <img
               src="/images/logo-web.svg"
               alt="Les P'tits Mijotés - Cuisine et Traiteur Africain"
-              style={{ height: "280px", width: "auto" }}
+              className="w-auto h-auto max-w-[85vw]"
+              style={{ maxHeight: "280px" }}
             />
           </div>
 
-          <p className="font-simonetta text-xl md:text-2xl text-gray-800 mb-16 max-w-2xl mx-auto text-pretty">
+          <p className="font-simonetta text-lg md:text-2xl text-gray-800 mb-10 max-w-2xl mx-auto text-pretty px-2">
             Une invitation au voyage entre traditions africaines et créations inspirées, pour vos événements et votre
             quotidien
           </p>
