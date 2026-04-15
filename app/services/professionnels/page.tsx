@@ -9,6 +9,7 @@ export default function ProfessionnelsPage() {
     {
       icon: Coffee,
       title: "Déjeuners d'entreprise",
+      image: "/Plateau dejeuner.JPG",
       description:
         "Offrez à vos équipes des pauses gourmandes, pratiques et de qualité au quotidien.",
       features: [
@@ -22,6 +23,7 @@ export default function ProfessionnelsPage() {
     {
       icon: Briefcase,
       title: "Reunions et seminaires",
+      image: "/Pause dejeuner.jpeg",
       description:
         "Simplifiez l'organisation de vos journées de travail avec une offre adaptée à vos temps forts.",
       features: [
@@ -35,6 +37,7 @@ export default function ProfessionnelsPage() {
     {
       icon: TrendingUp,
       title: "Événements professionnels",
+      image: "/Buffet d'entreprises.JPG",
       description:
         "Marquez les esprits avec une prestation conviviale et raffinée.",
       features: [
@@ -85,7 +88,7 @@ export default function ProfessionnelsPage() {
                 <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? "md:*:order-2" : ""}`}>
                   <div className="relative h-64 md:h-auto">
                     <Image
-                      src={`/professional-team.png?height=400&width=600&query=professional ${service.title.toLowerCase()}`}
+                      src={service.image}
                       alt={service.title}
                       fill
                       className="object-cover"

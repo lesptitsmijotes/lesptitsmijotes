@@ -220,10 +220,10 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-charmonman text-xl text-black mb-1">Téléphone</h3>
                           <a
-                            href="tel:+33695601821"
+                            href="tel:+33762677629"
                             className="font-simonetta text-gray-600 hover:text-[#ff3131] transition-colors"
                           >
-                            +33 6 95 60 18 21
+                            +33 7 62 67 76 29
                           </a>
                           <p className="font-simonetta text-sm text-gray-500 mt-1">Lundi - Samedi : 9h - 19h</p>
                         </div>
@@ -240,10 +240,10 @@ export default function ContactPage() {
                         <div>
                           <h3 className="font-charmonman text-xl text-black mb-1">Email</h3>
                           <a
-                            href="mailto:contact@lesptitsmijotes.fr"
+                            href="mailto:lesptitmijotes@gmail.com"
                             className="font-simonetta text-gray-600 hover:text-[#ff3131] transition-colors"
                           >
-                            contact@lesptitsmijotes.fr
+                            lesptitmijotes@gmail.com
                           </a>
                           <p className="font-simonetta text-sm text-gray-500 mt-1">Réponse sous 24h</p>
                         </div>
@@ -281,7 +281,7 @@ export default function ContactPage() {
                             className="border-2 border-white text-white hover:bg-white hover:text-[#ff3131] font-simonetta bg-transparent"
                           >
                             <a
-                              href="https://wa.me/33123456789"
+                              href="https://wa.me/33762677629"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="flex items-center gap-2"
